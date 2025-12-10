@@ -1,4 +1,3 @@
-
 import os
 
 os.system("cls")
@@ -13,22 +12,50 @@ print("""
 ╚═════╝░░╚════╝░╚══════╝╚══════╝░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝
       """)
 
-nome = input("Digite o nome do aluno: ")
-nota01 = float(input("Digite a primeira nota: "))
-nota02 = float(input("Digite a segunda nota: "))
-nota03 = float(input("Digite a terceira nota: "))
+resposta = "sim"
 
-media = (nota01 + nota02 + nota03) / 3
+while(resposta == "sim"):
 
-#Mostrando a média
-print(f"Sua média foi {round(media,2)}")
 
-#Verificando se o aluno está aprovado
-if media >=7:
-    print("Aprovado")
-elif media >=4:
-    print("Recuperação")
-else: 
-    print("Reprovado")   
+    nome = input("Digite o nome do aluno: ")
+    nota01 = float(input("Digite a primeira nota: "))
+    nota02 = float(input("Digite a segunda nota: "))
+    nota03 = float(input("Digite a terceira nota: "))
+
+    media = (nota01 + nota02 + nota03) / 3
+
+    situacao_do_aluno = ""
+
+    #Mostrando a média
+    print(f"Sua média foi {round(media,2)}")
+
+    #Verificando se o aluno está aprovado
+    if media >=7:
+        print("Aprovado")
+        situacao_do_aluno = "Aprovado"
+
+    elif media >=4:
+        print("Recuperação")
+        situacao_do_aluno = "Recuperação"
+    else: 
+        print("Reprovado")   
+        situacao_do_aluno = "Reprovado"
+
+    #Gravar os dados dos aluno
+    with open("notas_dos_alunos.txt", "a", encoding="utf-8") as arquivo:
+        arquivo.write(f"Nome do Aluno: {nome}\n")
+        arquivo.write(f"Nota 01: {nota01}\n")
+        arquivo.write(f"Nota 02: {nota02}\n")
+        arquivo.write(f"Nota 03: {nota03}\n")
+        arquivo.write(f"Média do aluno: {media}\n")
+        arquivo.write(f"Situação do Aluno: {situacao_do_aluno}\n")
+        arquivo.write("====================================================== \n")
+
+        print("Dados salvos com sucesso!")
+    
+
+    resposta = input("Gostaria de executar novamente, sim ou não?:")
+    
+    os.system("cls")
 
 input("Pressione qualquer <Enter> para fecha o programa.")
