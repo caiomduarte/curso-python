@@ -1,0 +1,21 @@
+Nome do Aluno: Carlos Daniel
+Nota 01: 9.0
+Nota 02: 2.0
+Nota 03: 3.0
+Média do aluno: 4.666666666666667
+Situação do Aluno: Recuperação
+====================================================== 
+Nome do Aluno: Renata Maria
+Nota 01: 9.0
+Nota 02: 6.0
+Nota 03: 5.0
+Média do aluno: 6.666666666666667
+Situação do Aluno: Recuperação
+====================================================== 
+Nome do Aluno: Roberto Silveira
+Nota 01: 9.0
+Nota 02: 9.0
+Nota 03: 9.0
+Média do aluno: 9.0
+Situação do Aluno: Aprovado
+====================================================== 

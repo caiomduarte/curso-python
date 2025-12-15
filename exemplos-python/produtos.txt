@@ -1,0 +1,3 @@
+Produto: caneta | Fabricante: Bic | Categoria: Canetas | Preço: 3.90 
+Produto: Bolacha | Fabricante: Trakinas | Categoria: Alimentos | Preço: 3.90 
+Produto: a | Fabricante: a | Categoria: a | Preço: 2.00 
